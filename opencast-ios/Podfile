@@ -1,0 +1,28 @@
+# OpenCast iOS 投屏项目 - CocoaPods 依赖配置
+#
+# 使用方法：
+# 1. 安装 CocoaPods: sudo gem install cocoapods
+# 2. 安装依赖: pod install
+# 3. 打开 OpenCast.xcworkspace（注意是 .xcworkspace 不是 .xcodeproj）
+
+platform :ios, '14.0'
+use_frameworks!
+
+target 'OpenCast' do
+  # WebRTC 核心库
+  pod 'GoogleWebRTC', '~> 1.1.32000'
+end
+
+target 'OpenCastBroadcastExtension' do
+  # Broadcast Extension 不需要 WebRTC
+end
+
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+      config.build_settings['ENABLE_BITCODE'] = 'NO'
+      config.build_settings['SWIFT_VERSION'] = '5.0'
+    end
+  end
+end

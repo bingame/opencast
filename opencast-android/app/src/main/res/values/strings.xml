@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenCast</string>
+
+    <!-- 主页 -->
+    <string name="home_title">OpenCast 投屏</string>
+    <string name="home_scanning">正在扫描设备…</string>
+    <string name="home_no_devices">未发现设备</string>
+    <string name="home_no_devices_hint">请确保接收端设备与当前设备在同一网络下</string>
+    <string name="home_device_name">当前设备</string>
+    <string name="home_connect">连接</string>
+    <string name="home_disconnect">断开</string>
+    <string name="home_manual_connect">手动连接</string>
+    <string name="home_ip_hint">输入接收端 IP 地址</string>
+    <string name="home_connecting">连接中…</string>
+
+    <!-- 投屏 -->
+    <string name="casting_title">正在投屏</string>
+    <string name="casting_stop">停止投屏</string>
+    <string name="casting_latency">延迟: %1$d ms</string>
+    <string name="casting_resolution">分辨率: %1$dx%2$d</string>
+    <string name="casting_fps">帧率: %1$d fps</string>
+    <string name="casting_connected">已连接</string>
+    <string name="casting_disconnected">已断开</string>
+    <string name="casting_connecting">连接中…</string>
+
+    <!-- 通知 -->
+    <string name="notification_channel_name">投屏服务</string>
+    <string name="notification_channel_description">屏幕投屏服务通知</string>
+    <string name="notification_title">OpenCast 正在投屏</string>
+    <string name="notification_text">点击返回应用</string>
+    <string name="notification_stop">停止投屏</string>
+
+    <!-- 权限 -->
+    <string name="permission_required">需要权限</string>
+    <string name="permission_screen_capture">需要屏幕采集权限才能进行投屏</string>
+    <string name="permission_notification">需要通知权限以显示投屏状态</string>
+
+    <!-- 错误 -->
+    <string name="error_connection_failed">连接失败</string>
+    <string name="error_webrtc_init">WebRTC 初始化失败</string>
+    <string name="error_screen_capture">屏幕采集启动失败</string>
+    <string name="error_signaling">信令服务器连接失败</string>
+    <string name="error_invalid_ip">无效的 IP 地址</string>
+</resources>

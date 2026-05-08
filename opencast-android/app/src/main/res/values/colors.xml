@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色调 - 深蓝色系 -->
+    <color name="primary">#FF1A73E8</color>
+    <color name="primary_dark">#FF1557B0</color>
+    <color name="primary_light">#FF4A9AF5</color>
+
+    <!-- 辅助色 -->
+    <color name="secondary">#FF00C853</color>
+    <color name="secondary_dark">#FF009624</color>
+    <color name="secondary_light">#FF5EFC82</color>
+
+    <!-- 背景色 -->
+    <color name="background">#FF0F1923</color>
+    <color name="surface">#FF1A2736</color>
+    <color name="surface_variant">#FF243447</color>
+
+    <!-- 文字色 -->
+    <color name="on_primary">#FFFFFFFF</color>
+    <color name="on_background">#FFE1E8F0</color>
+    <color name="on_surface">#FFE1E8F0</color>
+    <color name="on_surface_variant">#FF8B9DB5</color>
+
+    <!-- 状态色 -->
+    <color name="success">#FF00C853</color>
+    <color name="warning">#FFFFB300</color>
+    <color name="error">#FFCF6679</color>
+
+    <!-- 投屏状态色 -->
+    <color name="casting_active">#FF00E676</color>
+    <color name="casting_inactive">#FF78909C</color>
+</resources>

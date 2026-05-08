@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Broadcast Extension 基本配置 -->
+    <key>CFBundleDisplayName</key>
+    <string>OpenCast Broadcast</string>
+
+    <key>CFBundleIdentifier</key>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+
+    <key>CFBundleName</key>
+    <string>$(PRODUCT_NAME)</string>
+
+    <key>CFBundlePackageType</key>
+    <string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- 扩展点配置 -->
+    <key>NSExtension</key>
+    <dict>
+        <!-- 扩展类型：Broadcast Upload -->
+        <key>NSExtensionPointIdentifier</key>
+        <string>com.apple.broadcast-services-upload</string>
+
+        <!-- 扩展属性 -->
+        <key>NSExtensionPrincipalClass</key>
+        <string>$(PRODUCT_MODULE_NAME).SampleHandler</string>
+
+        <!-- 支持的广播类型 -->
+        <key>NSExtensionAttributes</key>
+        <dict>
+            <!-- 扩展显示名称（在系统投屏选择器中显示） -->
+            <key>NSExtensionDisplayName</key>
+            <string>OpenCast</string>
+
+            <!-- 支持的广播模式 -->
+            <!-- RPBroadcastExtensionModeSampleBuffer: 提供原始样本缓冲区 -->
+            <!-- RPBroadcastExtensionModeAudio: 仅音频 -->
+            <!-- RPBroadcastExtensionModeVideo: 仅视频 -->
+            <!-- RPBroadcastExtensionModeScreenAndAudio: 屏幕和音频 -->
+            <key>RPBroadcastExtensionMode</key>
+            <string>RPBroadcastExtensionModeSampleBuffer</string>
+
+            <!-- 是否支持 PiP（画中画） -->
+            <key>RPBroadcastExtensionSupportsPictureInPicture</key>
+            <false/>
+        </dict>
+    </dict>
+
+    <!-- App Group 配置（用于与主 App 共享数据） -->
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.opencast.app</string>
+    </array>
+
+    <!-- 所需的设备功能 -->
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+    </array>
+
+    <!-- 后台模式 -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>processing</string>
+    </array>
+
+    <!-- 隐私权限描述 -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>OpenCast 需要访问本地网络以发现同一局域网内的接收端设备</string>
+
+    <key>NSMicrophoneUsageDescription</key>
+    <string>OpenCast 需要使用麦克风以在投屏时传输音频</string>
+</dict>
+</plist>

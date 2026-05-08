@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- OpenCast 应用图标前景 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 背景圆形 -->
+    <path
+        android:fillColor="#1A73E8"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0" />
+
+    <!-- 投屏图标 - 屏幕形状 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,34h40v30H34z" />
+
+    <!-- 投屏箭头 -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,68 L54,78 M48,74 L54,80 L60,74"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2.5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+
+    <!-- Wi-Fi 信号弧线 -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M42,48 C42,48 48,42 54,42 C60,42 66,48 66,48"
+        android:strokeColor="#1A73E8"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M46,52 C46,52 50,48 54,48 C58,48 62,52 62,52"
+        android:strokeColor="#1A73E8"
+        android:strokeWidth="2"
+        android:strokeLineCap="round" />
+
+    <path
+        android:fillColor="#1A73E8"
+        android:pathData="M54,54m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0" />
+
+</vector>
